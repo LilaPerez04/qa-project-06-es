@@ -1,11 +1,11 @@
 import sender_stand_request
 import data
-import pytest
+# import pytest
 # import json
 
 
 def positive_assert(kit_body):
-    # El cuerpo de la solicitud actualizada se guarda en la variable user_body
+    # El cuerpo de la solicitud actualizada se guarda en la variable kit
     kit = sender_stand_request.post_new_client_kit(kit_body)
     # Comprueba si el código de estado es 201
     assert kit.status_code == 201
