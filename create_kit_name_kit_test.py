@@ -18,8 +18,6 @@ def negative_assert(kit_body):
     kit = sender_stand_request.post_new_client_kit(kit_body)
     # Comprueba si el código de estado es 201
     assert kit.status_code == 400
-    # Necesitas otro assert para comprobar que el name que se esté guardando sea el mismo que mandas
-    assert kit.json()["name"] == kit_body["name"]
 
 
 # Comprueba el número mínimo de caracteres permitidos: 1

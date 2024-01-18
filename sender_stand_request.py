@@ -5,10 +5,13 @@ import data
 
 
 def post_new_user(body):
+    headers = {
+        "Content-Type": "application/json"
+    }
     # inserta la dirección URL completa
     response = requests.post(configuration.URL_SERVICE + configuration.CREATE_USER_PATH,
                              json=body,  # inserta el cuerpo de solicitud
-                             headers=data.headers)  # inserta los encabezados
+                             headers=headers)  # inserta los encabezados
     response_token = response.json()["authToken"]  # guarda el token de autenticación en una variable
     return response_token
 

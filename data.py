@@ -1,7 +1,3 @@
-headers = {
-    "Content-Type": "application/json"
-    #  "Authorization": "Bearer {token}"
-}
 user_body = {
     "firstName": "Lila",
     "phone": "+11223344556",
