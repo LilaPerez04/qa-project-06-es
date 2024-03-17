@@ -1,4 +1,4 @@
-> # Proyecto 6: Liliana Pérez, Cohort 6°
+> # Proyecto 6: Liliana Pérez
 
 #### Descripción del Proyecto: Creación de un Kit para Usuario/a
 
